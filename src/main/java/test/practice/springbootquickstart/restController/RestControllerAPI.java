@@ -33,8 +33,8 @@ public class RestControllerAPI {
 	
 	private static ObjectMapper mapper = new ObjectMapper();
 	
-	@RequestMapping("/hello")
-	public List<mappingResult> hello(@RequestParam String sentence) throws Exception {
+	@RequestMapping("/checking")
+	public List<mappingResult> check(@RequestParam String sentence) throws Exception {
 		
 		JLanguageTool langTool = new JLanguageTool(new BritishEnglish());
 		List<mappingResult> mapping = new ArrayList<>();
